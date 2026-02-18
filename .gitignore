@@ -1,0 +1,11 @@
+# Folder kunci jawaban
+jawaban/
+*_jawaban/
+
+# PHP dependencies
+vendor/
+composer.lock
+
+# Python scripts for generating images
+generate_images*.py
+__pycache__/
