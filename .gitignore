@@ -9,3 +9,6 @@ composer.lock
 # Python scripts for generating images
 generate_images*.py
 __pycache__/
+
+.vscode/
+.phpunit.cache/
