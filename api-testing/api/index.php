@@ -4,18 +4,18 @@ header('Content-Type: application/json');
 
 $dataFile = __DIR__ . '/products.json';
 
-function readProducts($dataFile)
+function readProducts(string $file)
 {
-    if (!file_exists($dataFile)) {
-        file_put_contents($dataFile, '[]');
+    if (!file_exists($file)) {
+        file_put_contents($file, '[]');
     }
-    $content = file_get_contents($dataFile);
+    $content = file_get_contents($file);
     return json_decode($content, true) ?? [];
 }
 
-function saveProducts($dataFile, $products)
+function saveProducts(string $file, array $products)
 {
-    file_put_contents($dataFile, json_encode(array_values($products), JSON_PRETTY_PRINT));
+    file_put_contents($file, json_encode(array_values($products), JSON_PRETTY_PRINT));
 }
 
 $method = $_SERVER['REQUEST_METHOD'];

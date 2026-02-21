@@ -1,6 +1,6 @@
 {
     "name": "practice/api-testing",
-    "description": "API Testing Practice",
+    "description": "Praktek 3 - API Testing dengan PHPUnit & Guzzle",
     "type": "project",
     "license": "MIT",
     "require": {
